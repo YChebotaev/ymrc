@@ -1,4 +1,4 @@
-import Pusher from "pusher";
+const Pusher = require("pusher");
 
 var pusher = new Pusher({
   appId: "707694",
@@ -8,7 +8,7 @@ var pusher = new Pusher({
   useTLS: true
 });
 
-export function handler(event, context, callback) {
+exports.handler = function(event, context, callback) {
   console.log(event, context);
 
   pusher.trigger("my-channel", "my-event", {
@@ -19,4 +19,4 @@ export function handler(event, context, callback) {
     statusCode: 200,
     body: ""
   });
-}
+};
