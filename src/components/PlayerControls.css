@@ -1,0 +1,23 @@
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------- */
+
+.control-button {
+  font-size: 2rem;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+}
+
+.control-button__prev-track {
+}
+
+.control-button__play-track {
+}
+
+.control-button__next-track {
+}
