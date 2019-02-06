@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Switch, Route } from "react-router";
-import axios from "axios";
-import { withProps } from "recompose";
 
 import { InputCode } from "./pages/InputCode";
 import { PlayerRemote } from "./pages/PlayerRemote";
