@@ -1,4 +1,4 @@
-const Pusher = require("pusher");
+import Pusher from "pusher";
 
 var pusher = new Pusher({
   appId: "707694",
@@ -8,7 +8,7 @@ var pusher = new Pusher({
   encrypted: true
 });
 
-exports.handler = function(event, context, callback) {
+export function handler(event, context, callback) {
   console.log(event, context);
 
   pusher.trigger("my-channel", "my-event", {
@@ -19,4 +19,4 @@ exports.handler = function(event, context, callback) {
     statusCode: 200,
     body: ""
   });
-};
+}
