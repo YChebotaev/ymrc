@@ -5,7 +5,7 @@ var pusher = new Pusher({
   key: "3f43dc4d450902026e31",
   secret: "34f60b0ed788e14f60d3",
   cluster: "eu",
-  encrypted: true
+  useTLS: true
 });
 
 exports.handler = function(event, context, callback) {
