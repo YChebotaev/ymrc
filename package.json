@@ -8,7 +8,7 @@
     "@fortawesome/fontawesome-svg-core": "1.2.14",
     "@fortawesome/free-solid-svg-icons": "5.7.1",
     "@fortawesome/react-fontawesome": "0.1.4",
-    "pusher": "^2.2.0",
+    "pusher": "2.2.0",
     "react": "16.8.0-alpha.1",
     "react-dom": "16.8.0-alpha.1",
     "react-pin-input": "0.8.0",
