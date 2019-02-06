@@ -1,5 +1,5 @@
 {
-  "name": "new",
+  "name": "ymrc-client",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -8,11 +8,14 @@
     "@fortawesome/fontawesome-svg-core": "1.2.14",
     "@fortawesome/free-solid-svg-icons": "5.7.1",
     "@fortawesome/react-fontawesome": "0.1.4",
-    "pusher": "2.2.0",
+    "axios": "0.18.0",
     "react": "16.8.0-alpha.1",
     "react-dom": "16.8.0-alpha.1",
     "react-pin-input": "0.8.0",
-    "react-scripts": "2.0.3"
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.0.3",
+    "recompose": "0.30.0"
   },
   "devDependencies": {},
   "scripts": {
