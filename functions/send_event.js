@@ -9,11 +9,10 @@ var pusher = new Pusher({
 });
 
 exports.handler = function(event, context, callback) {
-  console.log(event, context);
+  const { method, params } = JSON.parse(event.body);
+  const [channelId] = params;
 
-  pusher.trigger("my-channel", "my-event", {
-    message: "hello world"
-  });
+  pusher.trigger(`RCID-${channelId}`, method);
 
   callback(null, {
     statusCode: 200,
