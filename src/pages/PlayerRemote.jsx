@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   PlayerControls,
   PrevTrack,
@@ -8,10 +8,21 @@ import {
 
 export const PlayerRemote = ({ match: { params } }) => {
   return (
-    <PlayerControls>
-      <PrevTrack rcid={params.rcid} />
-      <PlayTrack rcid={params.rcid} />
-      <NextTrack rcid={params.rcid} />
-    </PlayerControls>
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        display: "flex",
+        flexFlow: "column nowrap",
+        justifyContent: "center",
+        alignItems: "center"
+      }}
+    >
+      <PlayerControls>
+        <PrevTrack rcid={params.rcid} />
+        <PlayTrack rcid={params.rcid} />
+        <NextTrack rcid={params.rcid} />
+      </PlayerControls>
+    </div>
   );
 };
